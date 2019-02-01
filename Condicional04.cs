@@ -15,19 +15,19 @@ namespace Condicional04
             Console.WriteLine("Ingrese su salario");
             double s = double.Parse(Console.ReadLine());
 
-            if (s < (2.0 * smmlv))
+            if (s <= (2.0 * smmlv))
             {
-                vcm = s * 0.117;
+                vcm = 3200;
                 Console.WriteLine("A usted le corresponde la Tarifa A");
             }
-            else if (s < (5.0 * smmlv))
+            else if (s <= (5.0 * smmlv))
             {
-                vcm = s * 0.461;
+                vcm = 12700;
                 Console.WriteLine("A usted le corresponde la Tarifa B");
             }
             else
             {
-                vcm = s * 1.215;
+                vcm = 33500;
                 Console.WriteLine("A usted le corresponde la Tarifa C");
             }
 
